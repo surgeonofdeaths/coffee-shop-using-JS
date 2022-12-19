@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">COFFEE HOUSE</div>
+</header>
+
+<main class="main">
+    <div class="name-surname">
+        <div class="field">
+            <input type="text" placeholder="Введите Фамилию" name="surname">
+        </div>
+        <div class="field">
+            <input type="text" placeholder="Введите Имя" name="name">
+        </div>
+    </div>
+    <div class="inputs">
+        <div class="left-select">
+            <div class="fields">
+                <input type="checkbox" id="checkbox1" name="good" value="espresso" data-price="80">
+                <label class="label-text" for="checkbox1">Эспресо 80 $</label>
+                <input id="espresso" class="quantity" min="0" type="number" name="good" value="0">
+            </div>
+            <div class="fields">
+                <input id="checkbox2" type="checkbox" name="good" value="latte" data-price="110">
+                <label class="label-text" for="checkbox2">Латте 110 $</label>
+                <input id="latte" class="quantity" min="0" type="number" name="good" value="0">
+            </div>
+            <div class="fields">
+                <input id="checkbox3" type="checkbox" name="good" value="cappuccino" data-price="120">
+                <label class="label-text" for="checkbox3">Капучино 120 $</label>
+                <input id="cappuccino"  class="quantity" min="0" type="number" name="good" value="0">
+            </div>
+            <div class="fields">
+                <input id="checkbox4" type="checkbox" name="good" value="americano" data-price="90">
+                <label class="label-text" for="checkbox4">Американо 90 $</label>
+                <input id="americano" class="quantity" min="0" type="number" name="good" value="0">
+            </div>
+        </div>
+        <div class="right-select">
+            <div class="fields">
+                <input id="checkbox5" type="checkbox" name="good" value="chocolate-muffin" data-price="80">
+                <label class="label-text" for="checkbox5">Шоколадный кекс 80 $</label>
+                <input id="chocolate-muffin"  class="quantity" min="0" type="number" name="good" value="0">
+            </div>
+            <div class="fields">
+                <input id="checkbox6" type="checkbox" name="good" value="blueberry-muffin" data-price="90">
+                <label class="label-text" for="checkbox6">Черничный кекс 90 $</label>
+                <input id="blueberry-muffin" class="quantity" min="0" type="number" name="good" value="0">
+            </div>
+            <div class="fields">
+                <input id="checkbox7" type="checkbox" name="good" value="apple-tart" data-price="100">
+                <label class="label-text" for="checkbox7">Яблочный тарт 100 $</label>
+                <input id="apple-tart" class="quantity" type="number" min="0" name="good" value="0">
+            </div>
+        </div>
+    </div>
+    <div class="total"><p>Итого: <span class="result">0</span>$</p></div>
+    <div class="button-div"><button class="btn">Оформить заказ</button></div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
